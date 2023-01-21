@@ -1,7 +1,7 @@
 
 
 const result = fetch(
-  "https://newsapi.org/v2/top-headlines?country=in&apiKey=4049525922de49b1a80df6daf4ce8bee"
+  "https://newsapi.org/v2/top-headlines?country=in&apiKey=a42d222c2ff94b7da840b2d558deedbb"
 )
   .then(function (response) {
     return response.json();
@@ -50,7 +50,8 @@ function createCard(article) {
   
   if(trunc == 1) 
     description.textContent = description.textContent.substring(0,50);
-  
+    
+  description.textContent = description.textContent.substring(0,60); 
   description.textContent += '...';
   // create a div element to hold the card action
   
@@ -62,7 +63,8 @@ function createCard(article) {
   let link = document.createElement("a");
   link.textContent = "Read More";
   link.href = article.url;
-  
+  link.setAttribute("id" , "read-more")
+
   // append the elements to the DOM
   
   cardAction.appendChild(link);
@@ -85,13 +87,3 @@ function displayNews(data) {
   }
 
 }
-
-// create a function to clear the news
-
-function clearNews() {
-  // select the news div and set its innerHTML to an empty string
-
-  document.querySelector("#news").innerHTML = "";
-
-}
-
