@@ -7,10 +7,7 @@ const result = fetch(
     return response.json();
   })
   .then(function (data) {
-    if(data.articles.length > 10) {
-        data.articles.length = 10;
         displayNews(data);
-    }
   });
 
 // create a function to create a card for each article and append it to the DOM to display the news

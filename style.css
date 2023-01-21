@@ -1,35 +1,24 @@
 :root {
     --setTrunc : 0;
-  }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
     background-color: #f1f1f1;
 }
 
-.top__heading{
+.top_heading{
     background-color: #fff;
-    padding: 20px;
+    padding: 5px;
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
 
-.top__heading > h1{
-    font-size: 30px;
-    font-weight: 600;
-    color: #333;
+.top_heading > h1{
     text-align: center;
+    font-size: 3em;
 }
 
-.top__heading > p{
-    font-size: 14px;
-    color: #333;
+.top_heading > p{
     text-align: center;
 }
 
@@ -39,7 +28,7 @@ marquee {
 }
 
 /* select id news and style */
-#news{
+#news {
     background-color: rgba(13, 255, 0, 0.09);
     padding: 20px;
     border-bottom: 1px solid #ccc;
@@ -52,7 +41,7 @@ marquee {
     width: 70vw;
     height: 100%;
     background-color: #fff;
-    border-radius: 1em;
+    border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     overflow: hidden;
@@ -60,7 +49,7 @@ marquee {
 }
 
 .card:hover {
-    box-shadow: 0 0 20px rgba(245, 1, 1, 0.764);
+    box-shadow: 0 0 20px rgba(13, 107, 1, 0.764);
     transition: box-shadow 1s;
 }
 
